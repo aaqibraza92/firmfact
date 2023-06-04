@@ -31,7 +31,9 @@ a,button,input{
     background: #fff;
   }
   
-
+.themeBorder{
+  border: 1px solid #EDF0F8
+}
 
   a:hover{
     color: var(--color_light_grey);
@@ -55,6 +57,12 @@ a,button,input{
   -moz-border-radius: 19px;
   -o-border-radius: 19px;
   border-radius: 19px;
+}
+.radius10 {
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+  border-radius: 10px !important;
 }
 .radius100{
   -webkit-border-radius: 100%;
@@ -137,16 +145,52 @@ body .radiusFull{
 
 .btnTheme {
     background: var(--colorGreen);
-    padding: 10px 35px;
+    padding:12px 30px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
     color: #fff;
     text-decoration: none;
     border: none;
-    line-height: 18px;
     font-weight: 600;
   }
-  
+  .btnBlue {
+    background: #1456F2;
+    padding:12px 30px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+  } 
+   .btnBlue:hover {
+    background: #23a8df;
+    color: #fff;
+  }
+  .btnTransparent{
+    background: transparent;
+    border: 1px solid #E6E6F2;
+    padding:12px 30px;
+    color: #000;
+    font-weight: 700;
+  }
+  .btnLightBlue{
+    background: #E6EDF4;
+    border: 1px solid #E6EDF4;
+    padding:12px 30px;
+    color: #000;
+    font-weight: 700;
+  }
+  .btnLightBlue:hover{
+    background: #23a8df;
+    color: #fff;
+  }
+  .btnTransparent:hover{
+background:#3DBC60 ;
+color: #fff;
+border-color: #3DBC60 ;
+  }
   .btnTheme:hover {
     background: #FFC005;
     color: var(--colorBlack);

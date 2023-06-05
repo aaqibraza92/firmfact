@@ -394,78 +394,456 @@
 
       <section class="tabbing pt100 pb20 mobPt0">
         <div class="container-xl">
-          <div class="tabbing borderBottom pb30">
-            <ul class="noUl d-flex justify-content-center flex-wrap">
-              <li class="mb12">
-                <a href="#" class="colorBlack fs15 fw700 transition mr30"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a href="#" class="colorBlack fs15 fw700 transition mr30"
-                  >Reviews 34.8k</a
-                >
-              </li>
-              <li class="mb12">
-                <a
-                  href="schedule.html"
-                  class="colorBlack fs15 fw700 transition mr30 active"
-                  >Photos
-                </a>
-              </li>
-              <li class="mb12">
-                <a
-                  href="schedule.html"
-                  class="colorBlack fs15 fw700 transition mr30"
-                  >Benefits 18.8k
-                </a>
-              </li>
-              <li>
-                <a href="contact.html" class="colorBlack fs15 fw700 transition"
-                  >Q&A <span>24</span></a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section class="pt60 pb60">
-        <div class="container-xl">
-          <div class="row justify-content-center">
-            <div class="col-lg-10 col-md-12">
-              <div class="row gy-4 gx-4 overflow-hidden">
-                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
-                  <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+          <ul class="nav nav-tabs tabbing borderBottom pb30" role="tablist">
+            <li class="nav-item">
+              <a class="colorBlack fs15 fw700 transition mr30 active" data-bs-toggle="tab" href="#home">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="colorBlack fs15 fw700 transition mr30 " data-bs-toggle="tab" href="#review">Reviews 34.8k</a>
+            </li>
+            <li class="nav-item">
+              <a class="colorBlack fs15 fw700 transition mr30" data-bs-toggle="tab" href="#photos">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="colorBlack fs15 fw700 transition mr30" data-bs-toggle="tab" href="#benefits">Benefits 18.8k</a>
+            </li>
+            <li class="nav-item">
+              <a class="colorBlack fs15 fw700 transition mr30" data-bs-toggle="tab" href="#qa"> Q&A <span>24</span></a>
+            </li>
+           
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+              <h3>HOME</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="review" class="container tab-pane fade ">
+
+              <div class="d-flex align-items-center mb30">
+                  <span>
+                    <svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16.3151 1.27111C16.6535 0.441179 17.8287 0.441177 18.1671 1.27111L21.9944 10.658C22.1387 11.012 22.4722 11.2528 22.8537 11.2783L33.0725 11.9607C33.976 12.021 34.3405 13.1552 33.6413 13.7306L25.8045 20.1795C25.505 20.426 25.375 20.8234 25.471 21.1992L27.9667 30.9697C28.1894 31.8416 27.2372 32.541 26.4719 32.0677L17.767 26.6852C17.4447 26.4859 17.0375 26.4859 16.7152 26.6852L8.01029 32.0677C7.24494 32.541 6.29278 31.8416 6.51548 30.9697L9.01113 21.1992C9.10712 20.8234 8.97715 20.426 8.67765 20.1795L0.84085 13.7306C0.141632 13.1552 0.506122 12.021 1.40963 11.9607L11.6285 11.2783C12.0099 11.2528 12.3435 11.012 12.4878 10.658L16.3151 1.27111Z" fill="#F2724B"/>
+                      </svg>
+                      
+                  </span>
+                  <span class="fs32 fw800 colorBlack ml5">
+                    4.9
+                  </span>
+                  <span class="fs20 fw600 colorLightGrey ml5">
+                    (34.8k reviews)
+                  </span>
+              </div>
+              <div class="d-flex">
+                <div class="progressWrapper mr20">
+                  <div class="progress progress-bar-vertical mb10 ">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 75%;">
+                      
+                    </div>
+                  </div>
+                  <div class="colorLightGrey fs14 fw800 ">
+                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.0378 0.648889C18.1345 0.411765 18.4703 0.411765 18.567 0.648889L19.8105 3.69888C19.8518 3.80003 19.9471 3.86881 20.056 3.87609L23.3774 4.0979C23.6356 4.11514 23.7397 4.4392 23.54 4.6036L20.9919 6.70042C20.9063 6.77083 20.8692 6.88438 20.8966 6.99175L21.7079 10.1679C21.7715 10.417 21.4994 10.6169 21.2808 10.4816L18.4526 8.73291C18.3606 8.67597 18.2442 8.67597 18.1521 8.73291L15.324 10.4816C15.1053 10.6169 14.8333 10.417 14.8969 10.1679L15.7082 6.99175C15.7356 6.88438 15.6985 6.77083 15.6129 6.70042L13.0648 4.6036C12.865 4.4392 12.9692 4.11514 13.2273 4.0979L16.5487 3.87609C16.6577 3.86881 16.753 3.80003 16.7943 3.69888L18.0378 0.648889Z" fill="#76787A"/>
+                      <path d="M4.77902 13.162C4.22702 13.162 3.68102 13.102 3.14102 12.982C2.60102 12.862 2.09702 12.694 1.62902 12.478C1.16102 12.25 0.75302 11.98 0.40502 11.668L1.05302 10.246C1.62902 10.69 2.21702 11.026 2.81702 11.254C3.42902 11.47 4.07102 11.578 4.74302 11.578C5.59502 11.578 6.26102 11.356 6.74102 10.912C7.23302 10.468 7.47902 9.874 7.47902 9.13C7.47902 8.362 7.24502 7.744 6.77702 7.276C6.32102 6.796 5.68502 6.556 4.86902 6.556C4.30502 6.556 3.78902 6.67 3.32102 6.898C2.86502 7.126 2.46302 7.474 2.11502 7.942H0.81902V0.309999H8.50502V1.876H2.60102V6.448H2.13302C2.45702 5.992 2.88902 5.638 3.42902 5.386C3.98102 5.134 4.59902 5.008 5.28302 5.008C6.09902 5.008 6.80702 5.176 7.40702 5.512C8.00702 5.848 8.46902 6.316 8.79302 6.916C9.12902 7.516 9.29702 8.224 9.29702 9.04C9.29702 9.856 9.11102 10.576 8.73902 11.2C8.37902 11.812 7.85702 12.292 7.17302 12.64C6.50102 12.988 5.70302 13.162 4.77902 13.162Z" fill="#76787A"/>
+                      </svg>
+                      
+                  </div>
                 </div>
-                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
-                  <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+            
+                <div class="progressWrapper mr20">
+                  <div class="progress progress-bar-vertical mb10 ">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 75%;">
+                      
+                    </div>
+                  </div>
+                  <div class="colorLightGrey fs14 fw800 ">
+                    <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.0378 0.648889C18.1345 0.411765 18.4703 0.411765 18.567 0.648889L19.8105 3.69888C19.8518 3.80003 19.9471 3.86881 20.056 3.87609L23.3774 4.0979C23.6356 4.11514 23.7397 4.4392 23.54 4.6036L20.9919 6.70042C20.9063 6.77083 20.8692 6.88438 20.8966 6.99175L21.7079 10.1679C21.7715 10.417 21.4994 10.6169 21.2808 10.4816L18.4526 8.73291C18.3606 8.67597 18.2442 8.67597 18.1521 8.73291L15.324 10.4816C15.1053 10.6169 14.8333 10.417 14.8969 10.1679L15.7082 6.99175C15.7356 6.88438 15.6985 6.77083 15.6129 6.70042L13.0648 4.6036C12.865 4.4392 12.9692 4.11514 13.2273 4.0979L16.5487 3.87609C16.6577 3.86881 16.753 3.80003 16.7943 3.69888L18.0378 0.648889Z" fill="#76787A"/>
+                      <path d="M4.77902 13.162C4.22702 13.162 3.68102 13.102 3.14102 12.982C2.60102 12.862 2.09702 12.694 1.62902 12.478C1.16102 12.25 0.75302 11.98 0.40502 11.668L1.05302 10.246C1.62902 10.69 2.21702 11.026 2.81702 11.254C3.42902 11.47 4.07102 11.578 4.74302 11.578C5.59502 11.578 6.26102 11.356 6.74102 10.912C7.23302 10.468 7.47902 9.874 7.47902 9.13C7.47902 8.362 7.24502 7.744 6.77702 7.276C6.32102 6.796 5.68502 6.556 4.86902 6.556C4.30502 6.556 3.78902 6.67 3.32102 6.898C2.86502 7.126 2.46302 7.474 2.11502 7.942H0.81902V0.309999H8.50502V1.876H2.60102V6.448H2.13302C2.45702 5.992 2.88902 5.638 3.42902 5.386C3.98102 5.134 4.59902 5.008 5.28302 5.008C6.09902 5.008 6.80702 5.176 7.40702 5.512C8.00702 5.848 8.46902 6.316 8.79302 6.916C9.12902 7.516 9.29702 8.224 9.29702 9.04C9.29702 9.856 9.11102 10.576 8.73902 11.2C8.37902 11.812 7.85702 12.292 7.17302 12.64C6.50102 12.988 5.70302 13.162 4.77902 13.162Z" fill="#76787A"/>
+                      </svg>
+                      
+                  </div>
                 </div>
-                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
-                  <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+
+                <div class="progressWrapper mr20">
+                  <div class="progress progress-bar-vertical mb10 ">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 75%;">
+                      
+                    </div>
+                  </div>
+                  <div class="colorLightGrey fs14 fw800 ">
+                    <svg width="25" height="14" viewBox="0 0 25 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.5201 0.648889C18.6168 0.411765 18.9526 0.411765 19.0493 0.648889L20.2928 3.69888C20.3341 3.80003 20.4294 3.86881 20.5383 3.87609L23.8597 4.0979C24.1179 4.11514 24.222 4.4392 24.0223 4.6036L21.4742 6.70042C21.3886 6.77083 21.3515 6.88438 21.3789 6.99175L22.1902 10.1679C22.2538 10.417 21.9817 10.6169 21.7631 10.4816L18.9349 8.73291C18.8429 8.67597 18.7265 8.67597 18.6344 8.73291L15.8063 10.4816C15.5876 10.6169 15.3156 10.417 15.3792 10.1679L16.1905 6.99175C16.2179 6.88438 16.1808 6.77083 16.0952 6.70042L13.5471 4.6036C13.3473 4.4392 13.4515 4.11514 13.7096 4.0979L17.031 3.87609C17.14 3.86881 17.2353 3.80003 17.2766 3.69888L18.5201 0.648889Z" fill="#76787A"/>
+                      <path d="M4.95532 13.162C4.09132 13.162 3.26332 13.036 2.47132 12.784C1.67932 12.52 1.01932 12.148 0.49132 11.668L1.13932 10.246C1.72732 10.702 2.32732 11.038 2.93932 11.254C3.55132 11.47 4.20532 11.578 4.90132 11.578C5.78932 11.578 6.46132 11.392 6.91732 11.02C7.38532 10.648 7.61932 10.114 7.61932 9.418C7.61932 8.734 7.38532 8.218 6.91732 7.87C6.46132 7.51 5.78332 7.33 4.88332 7.33H2.92132V5.818H4.73932C5.50732 5.818 6.11932 5.626 6.57532 5.242C7.03132 4.846 7.25932 4.312 7.25932 3.64C7.25932 3.028 7.04932 2.56 6.62932 2.236C6.20932 1.9 5.60932 1.732 4.82932 1.732C3.50932 1.732 2.35132 2.194 1.35532 3.118L0.72532 1.696C1.21732 1.204 1.84132 0.825999 2.59732 0.561999C3.35332 0.285999 4.14532 0.147999 4.97332 0.147999C6.24532 0.147999 7.24732 0.441999 7.97932 1.03C8.71132 1.606 9.07732 2.41 9.07732 3.442C9.07732 4.222 8.85532 4.888 8.41132 5.44C7.97932 5.992 7.38532 6.358 6.62932 6.538V6.34C7.52932 6.484 8.21932 6.844 8.69932 7.42C9.19132 7.984 9.43732 8.692 9.43732 9.544C9.43732 10.672 9.03532 11.56 8.23132 12.208C7.43932 12.844 6.34732 13.162 4.95532 13.162Z" fill="#76787A"/>
+                      </svg>
+                      
+                      
+                  </div>
                 </div>
-                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
-                  <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+
+                <div class="progressWrapper mr20">
+                  <div class="progress progress-bar-vertical mb10 ">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 75%;">
+                      
+                    </div>
+                  </div>
+                  <div class="colorLightGrey fs14 fw800 ">
+                    <svg width="25" height="13" viewBox="0 0 25 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.7612 0.648889C18.8579 0.411765 19.1937 0.411765 19.2903 0.648889L20.5339 3.69888C20.5751 3.80003 20.6704 3.86881 20.7794 3.87609L24.1008 4.0979C24.359 4.11514 24.4631 4.4392 24.2633 4.6036L21.7153 6.70042C21.6297 6.77083 21.5926 6.88438 21.62 6.99175L22.4313 10.1679C22.4949 10.417 22.2228 10.6169 22.0042 10.4816L19.176 8.73291C19.084 8.67597 18.9676 8.67597 18.8755 8.73291L16.0474 10.4816C15.8287 10.6169 15.5567 10.417 15.6203 10.1679L16.4316 6.99175C16.459 6.88438 16.4219 6.77083 16.3363 6.70042L13.7882 4.6036C13.5884 4.4392 13.6926 4.11514 13.9507 4.0979L17.2721 3.87609C17.3811 3.86881 17.4764 3.80003 17.5176 3.69888L18.7612 0.648889Z" fill="#76787A"/>
+                      <path d="M1.41641 13V11.614L5.77241 7.06C6.33641 6.472 6.75641 5.92 7.03241 5.404C7.30841 4.888 7.44641 4.354 7.44641 3.802C7.44641 3.118 7.23041 2.602 6.79841 2.254C6.37841 1.906 5.76641 1.732 4.96241 1.732C4.32641 1.732 3.72641 1.846 3.16241 2.074C2.61041 2.302 2.07641 2.65 1.56041 3.118L0.912409 1.696C1.41641 1.228 2.04041 0.855999 2.78441 0.579999C3.54041 0.291999 4.33841 0.147999 5.17841 0.147999C6.49841 0.147999 7.51241 0.447999 8.22041 1.048C8.94041 1.648 9.30041 2.506 9.30041 3.622C9.30041 4.414 9.10841 5.176 8.72441 5.908C8.34041 6.628 7.76441 7.372 6.99641 8.14L3.23441 11.938V11.434H9.82241V13H1.41641Z" fill="#76787A"/>
+                      </svg>
+                      
+                  </div>
                 </div>
-                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
-                  <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
-                </div>
-                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
-                  <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
-                </div>
-                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
-                  <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
-                </div>
-                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
-                  <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
-                </div>
-                <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
-                  <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+                <div class="progressWrapper mr20">
+                  <div class="progress progress-bar-vertical mb10 ">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 75%;">
+                      
+                    </div>
+                  </div>
+                  <div class="colorLightGrey fs14 fw800 ">
+                    <svg width="23" height="13" viewBox="0 0 23 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.0024 0.648889C17.0991 0.411765 17.4349 0.411765 17.5316 0.648889L18.7751 3.69888C18.8164 3.80003 18.9117 3.86881 19.0206 3.87609L22.342 4.0979C22.6002 4.11514 22.7043 4.4392 22.5046 4.6036L19.9565 6.70042C19.8709 6.77083 19.8338 6.88438 19.8612 6.99175L20.6725 10.1679C20.7361 10.417 20.464 10.6169 20.2454 10.4816L17.4172 8.73291C17.3252 8.67597 17.2088 8.67597 17.1167 8.73291L14.2886 10.4816C14.0699 10.6169 13.7979 10.417 13.8615 10.1679L14.6728 6.99175C14.7002 6.88438 14.6631 6.77083 14.5775 6.70042L12.0294 4.6036C11.8296 4.4392 11.9338 4.11514 12.1919 4.0979L15.5133 3.87609C15.6223 3.86881 15.7176 3.80003 15.7589 3.69888L17.0024 0.648889Z" fill="#76787A"/>
+                      <path d="M0.32362 13V11.434H3.27562V1.894H4.21162L0.61162 4.09V2.29L3.79762 0.309999H5.14762V11.434H7.91962V13H0.32362Z" fill="#76787A"/>
+                      </svg>
+                      
+                      
+                  </div>
                 </div>
               </div>
+            
+            </div>
+            <div id="photos" class="container tab-pane fade"><br>
+              <section class="pt60 pb60">
+                <div class="container-xl">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-12">
+                      <div class="row gy-4 gx-4 overflow-hidden">
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
+                          <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
+                          <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
+                          <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
+                          <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
+                          <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
+                          <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
+                          <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
+                          <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+                        </div>
+                        <div class="col-lg-4 col-xl-4 col-md-4 col-sm-6">
+                          <img src="./assets/img/demo_img.svg" alt="" class="w-100" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div id="benefits" class="container tab-pane fade"><br>
+              <section class="pt20 pb0">
+                <div class="container">
+                  <div class="row justify-content-center text-center">
+                    <div class="col-lg-7">
+                      <h3 class="fs24 fw800 mb20">Accenture Employee Benefits</h3>
+                      <p class="fs20 fw500 mb0">
+                        Our 674,000 people deliver on the promise of technology and
+                        human ingenuity every day, serving clients in more than 120
+                        countries.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="pt60 pb60">
+                <div class="container-xl">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-12">
+                      <div class="row borderBoxWrapper">
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carPink mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carGreen mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carViolet mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carPinkish mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carPink mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carGreen mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carViolet mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carPinkish mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carPink mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carGreen mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carViolet mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carPinkish mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carPink mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carGreen mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carViolet mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 borderBox">
+                          <div class="d-flex align-items-center pt30 pb30 pl15 pr15">
+                            <div class="radius19 carWrapper carPinkish mr15">
+                              <img
+                                src="./assets/img/car.svg"
+                                alt=""
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div>
+                              <h3 class="fs16 fw700 mb0 colorBlack">Free Transport</h3>
+                              <p class="fs14 fw600 mb0">11.3k</p>
+                            </div>
+                          </div>
+                        </div>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div id="qa" class="container tab-pane fade"><br>
+              <h3>Q & A</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
             </div>
           </div>
+
         </div>
       </section>
+ 
 
       <section class="pt60 pb60">
         <div class="container-xl">

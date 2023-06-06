@@ -148,7 +148,32 @@ button.owl-dot.active {
   width: 100%;
   height: 450px;
 }
+@media only screen and (max-width: 1160px) and (min-width: 1024px) {
+ body .btnTheme.btnWhite {
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: 12px ;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .homeVar h3 {
+    font-size: 18px;
+  }
+}
+
 @media only screen and (max-width: 1024px) and (min-width: 767px) {
+  .homeVar h3 {
+    font-size: 18px;
+  }
+  .btnTheme.btnWhite {
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .searchForm {
     margin-bottom: 10px;
   }
@@ -198,6 +223,12 @@ button.owl-dot.active {
 }
 
 @media only screen and (max-width: 767px) {
+  .col-xs-8 {
+    max-width: 80%;
+  }
+  .homeVar h3 {
+    font-size: 18px;
+  }
   .tabbing > li {
     margin-bottom: 12px;
   }
@@ -423,6 +454,7 @@ background: #FAFAFA;
 }
 .maxWrapper {
   max-width: 100px;
+  min-width: 70px;
   margin: 0 auto;
   border-radius: 10px;
   text-align: center;
@@ -516,4 +548,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cffffff', e
 
   top: 0px;
 z-index: 9999999;
+}
+.btnTheme.btnWhite{
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+}
+.btnTheme.btnWhite:hover{
+  background: var(--colorGreen);
+  color: #fff;
+}
+.bor{
+  position: relative;
+}
+.bor::after {
+  background: url('../img/border.svg') no-repeat;
+  content: "";
+  bottom: -9px;
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background-size: 100%;
+  left: 0px;
 }

@@ -22,7 +22,12 @@ a,button,input{
 .colorGrey {
   color: #767676;
 }
-
+.bgGreen{
+  background: var(--colorGreen);
+}
+.bgRed{
+  background: var(--colorRed);
+}
 
   .bgBlack {
     background: #000;

@@ -11,6 +11,11 @@ html {
   --colorBlack: #2d2d2d;
   --colorRed: #e10000;
   --colorGreen: #3dbc60;
+  --colorBlue: #1456F2;
+}
+
+.colorBlue{
+  color: var(--colorBlue);
 }
 .mynav a:hover,
 .mynav a.active {
@@ -391,3 +396,41 @@ p {
 .progress-bar {
   background-color: #F2724B;
 }
+
+.lightShad{
+background: #FAFAFA;
+}
+.wrapperIt img {
+  max-width: 110px;
+  margin: 0 auto;
+}
+.maxWrapper {
+  max-width: 100px;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+}
+.rombus{
+  border: 2px solid #EFEFEF;
+}
+.abtBox .borderBox {
+  min-height: 140px;
+}
+
+.owl-carousel2 .owl-item {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+.owl-carousel2 .item{
+  opacity:0.4;
+  transition:.4s ease all;
+  margin:0 20px;
+  transform:scale(.8);
+}
+@media(max-width:1000px){
+  .owl-carousel2 .item{margin:0; transform:scale(.9)}
+}
+.owl-carousel2 .active .item{
+  opacity:1;
+  transform:scale(1);
+} 

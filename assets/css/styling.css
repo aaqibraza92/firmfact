@@ -190,7 +190,24 @@ button.owl-dot.active {
 .modal-body .mynav li a {
   margin-right: 0px;
 }
+@media only screen and (max-width: 576px) {
+  .col-xs-6 {
+    flex: 0 0 auto !important;
+    width: 50% !important;
+  }
+}
+
 @media only screen and (max-width: 767px) {
+  .tabbing > li {
+    margin-bottom: 12px;
+  }
+  .pt80 {
+    padding-top: 40px;
+  }
+ .pb80 {
+    padding-bottom: 40px;
+  }
+
   .mobPt0 {
     padding-top: 0px;
   }
@@ -417,20 +434,86 @@ background: #FAFAFA;
   min-height: 140px;
 }
 
-.owl-carousel2 .owl-item {
+.owl-carouselCenter .owl-item {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
-.owl-carousel2 .item{
+.owl-carouselCenter .owl-controls{position:absolute; margin-top:300px;}
+.owl-carouselCenter .item{
   opacity:0.4;
   transition:.4s ease all;
-  margin:0 20px;
+  margin:0px;
   transform:scale(.8);
 }
 @media(max-width:1000px){
-  .owl-carousel2 .item{margin:0; transform:scale(.9)}
+  .owl-carouselCenter .item{margin:0; transform:scale(.9)}
 }
-.owl-carousel2 .active .item{
+.owl-carouselCenter .owl-item {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+.owl-carouselCenter .active + div .item{
   opacity:1;
   transform:scale(1);
 } 
+.reviewWrapper{
+  background: #FFFCFB;
+
+}
+.wh56{
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+}
+.font-italic {
+  font-style: italic;
+}
+.leaderWrapper{
+  background: #FFF8F5;
+}
+.bgGrey{
+  background: #FBFBFB;
+}
+.bgPink{
+  background: #FFF8F5;
+}
+.linkdin{
+  background: #0066C8;
+  color: #fff;
+  padding: 3px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
+.owl-nav > button {
+  background: #FE7B29 !important;
+  color: #fff !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.owl-nav {
+  text-align: center;
+  margin-top: 30px;
+}
+.owl-nav > button span {
+  font-size: 32px;
+  line-height: 25px;
+}
+.owl-nav > button:first-child {
+  margin-right: 10px;
+}
+.ovr {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0.61+35,1+100 */
+background: -moz-linear-gradient(left,  rgba(255,255,255,0.61) 0%, rgba(255,255,255,0.61) 35%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(255,255,255,0.61) 0%,rgba(255,255,255,0.61) 35%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(255,255,255,0.61) 0%,rgba(255,255,255,0.61) 35%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+  top: 0px;
+z-index: 9999999;
+}

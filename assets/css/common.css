@@ -212,3 +212,6 @@ border-color: #3DBC60 ;
   .imgCover{
     object-fit: cover;
   }
+  .colorDarkGrey{
+    color: #3D495B;
+  }

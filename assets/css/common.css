@@ -58,16 +58,22 @@ a,button,input{
   border-radius: 8px;
 }
 .radius19 {
-  -webkit-border-radius: 19px;
-  -moz-border-radius: 19px;
-  -o-border-radius: 19px;
-  border-radius: 19px;
+  -webkit-border-radius: 19px !important;
+  -moz-border-radius: 19px !important;
+  -o-border-radius: 19px !important;
+  border-radius: 19px !important;
 }
 .radius10 {
   -webkit-border-radius: 10px !important;
   -moz-border-radius: 10px !important;
   -o-border-radius: 10px !important;
   border-radius: 10px !important;
+}
+.radius40 {
+  -webkit-border-radius: 40px !important;
+  -moz-border-radius: 40px !important;
+  -o-border-radius: 40px !important;
+  border-radius: 40px !important;
 }
 .radius100{
   -webkit-border-radius: 100%;

@@ -13,6 +13,9 @@ html {
   --colorGreen: #3dbc60;
   --colorBlue: #1456F2;
 }
+.colorOrange{
+  color: #FE7B29;
+}
 
 .colorBlue{
   color: var(--colorBlue);
@@ -570,4 +573,16 @@ z-index: 9999999;
   height: 10px;
   background-size: 100%;
   left: 0px;
+}
+.bannerSearch.searchForm input {
+  height: 63px;
+}
+.btnTheme.btnBlack {
+  background: #000;
+  height: 75%;
+  right: 10px;
+}
+.btnTheme.btnBlack:hover {
+  background: var(--colorGreen);
+  color: #fff;
 }

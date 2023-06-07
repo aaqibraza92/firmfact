@@ -716,3 +716,9 @@ a.bgOrange:hover{
   background: #EDF3FF;
   border: 1px solid #CDDCFB;
 }
+.ovrlay {
+  background: rgba(20, 86, 242, 0.6);
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}

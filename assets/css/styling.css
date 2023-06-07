@@ -682,6 +682,10 @@ z-index: 9999999;
 .bgOrange{
   background: #F2724B;
 }
+a.bgOrange:hover{
+  background: var(--colorGreen);
+  color: #fff;
+}
 .ratingNo{
   height: 64px;
   width: 64px;
@@ -703,4 +707,12 @@ z-index: 9999999;
 }
 .horZProgress .progress {
   background: #fff;
+}
+.commonFem {
+  background: #FEF7FF;
+  border: 1px solid #F4D9F8;
+}
+.commonFem1{
+  background: #EDF3FF;
+  border: 1px solid #CDDCFB;
 }

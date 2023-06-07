@@ -152,6 +152,13 @@ button.owl-dot.active {
   height: 450px;
 }
 @media only screen and (max-width: 1160px) and (min-width: 1024px) {
+  .jobType {
+    display: table;
+    margin-left: 0px;
+    font-size: 13px;
+    border-width: 1px;
+    margin-top: 4px;
+  }
  body .btnTheme.btnWhite {
     background: #fff;
     color: #000;
@@ -170,6 +177,13 @@ button.owl-dot.active {
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 767px) {
+  .jobType {
+    display: table;
+    margin-left: 0px;
+    font-size: 13px;
+    border-width: 1px;
+    margin-top: 4px;
+  }
   .homeVar h3 {
     font-size: 18px;
   }
@@ -229,6 +243,16 @@ button.owl-dot.active {
   }
 }
 @media only screen and (max-width: 800px) {
+  .btnTransparent {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  body .jobType {
+    display: inline-block;
+    font-size: 12px !important;
+    margin-left: 0px;
+    margin-top: 4px;
+  }
   .mobMb0{
     margin-bottom: 0px !important;
   }
@@ -654,4 +678,26 @@ z-index: 9999999;
 }
 .bgLightBlue{
   background: #F6FAFF;
+}
+.bgOrange{
+  background: #F2724B;
+}
+.ratingNo{
+  height: 64px;
+  width: 64px;
+}
+.jobType {
+  border: 2px solid var(--colorGreen);
+  padding: 5px 10px;
+  color: var(--colorGreen);
+  font-size: 16px;
+}
+.colorGreen{
+  color: var(--colorGreen);
+}
+.colorRed{
+  color: var(--colorRed);
+}
+.wrapperRev {
+  border: 1px solid #F4E1DA;
 }

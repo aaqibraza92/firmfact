@@ -701,3 +701,6 @@ z-index: 9999999;
 .wrapperRev {
   border: 1px solid #F4E1DA;
 }
+.horZProgress .progress {
+  background: #fff;
+}

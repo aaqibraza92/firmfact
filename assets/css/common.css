@@ -186,6 +186,9 @@ body .radiusFull{
     color: #000;
     font-weight: 700;
   }
+  .btnTransparent.btnLightGrey{
+    background: #F3F3F3;
+  }
   .btnLightBlue{
     background: #E6EDF4;
     border: 1px solid #E6EDF4;
